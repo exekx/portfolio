@@ -1,17 +1,86 @@
 body {
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
-.header {
-    width: 100%;
-    height: 300vh;
-    background-color: burlywood;
 
+.container{
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(189, 79, 189);
+}
+
+.none{
+    display: none !important;
+}
+
+/* header */
+
+.header {
+    position: relative;
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: #556983;
+    background-image: url("./img/header/header-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.header-title{
+   margin: 0;
+   margin-bottom: 25px;
+   font-weight: bold;
+   font-size: 56px;
+   line-height: 130%;
+
+   text-align: center;
+   color: white;
+}
+
+.header-subtitle{
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+ 
+    text-align: center;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
 
-    color: aliceblue;
+    color: white;
+}
+
+.header-arrow{
+    width: 48px;
+    height: 48px;
+    /* background-color: red; */
+
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+
+    transform: translate(-50%, 0);
+}
+
+/* portfolio */
+
+.portfolio{
+    background-color: rgb(37, 226, 179);
+    padding-top: 80px;
+    padding-bottom: 115px;
+}
+
+.portfolio-header{
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+    text-align: center;
+
+    color: #000000;
 }
