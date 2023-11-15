@@ -243,11 +243,11 @@ body {
     padding-left: 30px;
     padding-right: 30px;
 
-    border: 3px solid rgb(0, 68, 255);
+    border: 3px solid #556983;
     border-radius: 50px;
 
     
-    color: rgb(0, 68, 255);
+    color: #556983;
     font-weight: 700;
     font-style: 16px;
     line-height: 54px;
