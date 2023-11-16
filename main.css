@@ -2,10 +2,15 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     color: #000000;
+    
 }
 
 .container{
@@ -18,8 +23,6 @@ body {
     display: none !important;
 }
 
-/* header */
-
 .header {
     position: relative;
     display: flex;
@@ -31,7 +34,6 @@ body {
     height: 100vh;
 
     background-color: #556983;
-    background-image: url("./img/header/header-bg.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -63,7 +65,6 @@ body {
 .header-arrow{
     width: 48px;
     height: 48px;
-    /* background-color: red; */
 
     position: absolute;
     bottom: 30px;
@@ -72,11 +73,14 @@ body {
     transform: translate(-50%, 0);
 }
 
-/* portfolio */
-
 .portfolio{
     padding-top: 80px;
     padding-bottom: 115px;
+    background:rgba(126, 155, 189, 0.35);
+    background: linear-gradient(90deg, rgb(126, 155, 189, 0.35) 0%, white 100%);
+    display: flex;
+    justify-content: center;
+    
 }
 
 .portfolio-header{
@@ -98,14 +102,27 @@ body {
 
 .card{
     margin-bottom: 30px;
-    padding: 20px;
     max-width: 540px;
-    background-color: white;
+    background: white;
     box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
+    transition: transform 0.2s ease-in;
+    border-radius: 5%;
 }
 
-.card:last-child, .card:nth-last-child(2){
-    margin-bottom: 0px;
+.card:hover{
+    transform: translateY(-15px);
+}
+
+.card-link{
+    padding: 20px;
+    color: #000;
+    text-decoration: none;
+    display: block;
+    transition: color 0.2s ease-in;
+}
+
+.card-link:hover{
+    color:blue
 }
 
 .card-img{
@@ -118,17 +135,14 @@ body {
     font-weight: 600;
     font-size: 24px;
     line-height: 130%;
-    color: #000000;
 }
 
 .card p{
     margin: 0;
     font-size: 16px;
     line-height: 130%;
-    color: #000000;
 }
 
-/*  Footer */
 
 .footer{
     padding-top: 45px;
@@ -198,6 +212,13 @@ body {
     line-height: 44px;
     text-transform: uppercase;
     text-decoration: none;
+
+    transition: all 0.2s ease-in;
+}
+
+.footer-button:hover{
+    background-color: white;
+    color: #556983;
 }
 
 .footer-contacts p{
@@ -208,8 +229,10 @@ body {
 
 .project{
     padding-top: 80px;
-    padding-top: 120px;
+    padding-bottom: 120px;
     text-align: center;
+    background:rgba(126, 155, 189, 0.35);
+    background: linear-gradient(90deg, rgb(126, 155, 189, 0.35) 0%, white 100%);
 }
 
 .project-header{
@@ -237,7 +260,7 @@ body {
     line-height: 1.5;
 }
 
-.ptoject-button-back{
+.ptoject-button-back {
     display: inline-block;
     height: 60px;
     padding-left: 30px;
@@ -253,4 +276,17 @@ body {
     line-height: 54px;
     text-transform: uppercase;
     text-decoration: none;
+
+    transition: all 0.2s ease-in;
+}
+
+.ptoject-button-back:hover{
+    background-color: #556983;
+    color: white;
+}
+
+.block{
+    width: 800px;
+    height: 400px;
+    background-color: aqua;
 }
