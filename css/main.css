@@ -13,6 +13,10 @@ body {
     
 }
 
+img {
+    max-width: 100%;
+}
+
 .container{
     max-width: 1110px;
     margin-left: auto;
@@ -282,24 +286,4 @@ body {
 .ptoject-button-back:hover{
     background-color: #556983;
     color: white;
-}
-
-.block{
-    width: 800px;
-    height: 400px;
-    background-color: coral;
-}
-
-@media (max-width: 800px){
-    .block{
-        width: 400px;
-        background-color: aquamarine;
-    }
-}
-
-@media (max-width: 600px){
-    .block{
-        width: 300px;
-        background-color: rgb(255, 0, 119);
-    }
 }
