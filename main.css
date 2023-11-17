@@ -34,8 +34,6 @@ body {
     height: 100vh;
 
     background-color: #556983;
-    background-size: cover;
-    background-position: center;
 }
 
 .header-title{
@@ -76,8 +74,7 @@ body {
 .portfolio{
     padding-top: 80px;
     padding-bottom: 115px;
-    background:rgba(126, 155, 189, 0.35);
-    background: linear-gradient(90deg, rgb(126, 155, 189, 0.35) 0%, white 100%);
+    background-color: white;
     display: flex;
     justify-content: center;
     
