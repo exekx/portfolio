@@ -287,5 +287,19 @@ body {
 .block{
     width: 800px;
     height: 400px;
-    background-color: aqua;
+    background-color: coral;
+}
+
+@media (max-width: 800px){
+    .block{
+        width: 400px;
+        background-color: aquamarine;
+    }
+}
+
+@media (max-width: 600px){
+    .block{
+        width: 300px;
+        background-color: rgb(255, 0, 119);
+    }
 }
